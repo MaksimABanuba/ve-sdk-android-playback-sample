@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VePlaybackExample</string>
+
+    <!-- VIDEO EDITOR TOKEN -->
+    <!-- Please contact Banuba https://www.banuba.com/video-editor-sdk to get this token -->
+    <string name="banuba_token"><!--- PUT YOUR TOKEN HERE !--></string>
+
+</resources>
