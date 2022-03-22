@@ -287,4 +287,4 @@ List of Video Editor APIs utilized in playback sample.
 
 ```ve-playback-sdk``` module contains interfaces and classes for managing video playback with applied music, visual and time effects.
 
-[API reference](mddocs/index.md)
+[API reference](mddocs/playback/index.md)
