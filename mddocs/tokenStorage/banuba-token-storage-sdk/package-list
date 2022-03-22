@@ -1,0 +1,69 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.banuba.sdk.token.storage.data////PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/CachedToken///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-cached-token/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/CachedToken/CachedToken/#kotlin.String#java.util.Date/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-cached-token/-cached-token.md
+$dokka.location:com.banuba.sdk.token.storage.data/CachedToken/date/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-cached-token/date.md
+$dokka.location:com.banuba.sdk.token.storage.data/CachedToken/token/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-cached-token/token.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenPreference.Companion///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/-companion/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenPreference///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/TokenPreference/#android.content.Context/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/-token-preference.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/get-token.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/updateToken/#kotlin.String?#kotlin.Long/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/update-token.md
+$dokka.location:com.banuba.sdk.token.storage.di////PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/index.md
+$dokka.location:com.banuba.sdk.token.storage.di/TokenStorageKoinModule///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/-token-storage-koin-module/index.md
+$dokka.location:com.banuba.sdk.token.storage.di/TokenStorageKoinModule/TokenStorageKoinModule/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/-token-storage-koin-module/-token-storage-koin-module.md
+$dokka.location:com.banuba.sdk.token.storage.di/TokenStorageKoinModule/module/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/-token-storage-koin-module/module.md
+$dokka.location:com.banuba.sdk.token.storage.license////PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.ClientType.COMMERCIAL///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-client-type/-c-o-m-m-e-r-c-i-a-l/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.ClientType.ENTERPRISE///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-client-type/-e-n-t-e-r-p-r-i-s-e/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.ClientType.TRIAL///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-client-type/-t-r-i-a-l/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.ClientType///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-client-type/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.TimeBombInfo///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-time-bomb-info/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.TimeBombInfo/TimeBombInfo/#java.util.Date#java.util.Date/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-time-bomb-info/-time-bomb-info.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.TimeBombInfo/begin/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-time-bomb-info/begin.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense.TimeBombInfo/end/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-time-bomb-info/end.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/EditorLicense/#kotlin.String#com.banuba.sdk.token.storage.license.EditorLicense.ClientType#kotlin.Boolean#com.banuba.sdk.token.storage.license.EditorLicense.TimeBombInfo?#kotlin.Boolean#kotlin.Int#kotlin.collections.Set[kotlin.Long]#kotlin.String?#kotlin.Boolean#kotlin.Boolean#kotlin.String#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/-editor-license.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/arCloudUrl/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/ar-cloud-url.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/clientId/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/client-id.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/clientType/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/client-type.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/collectAnalytics/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/collect-analytics.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/giphyApiKey/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/giphy-api-key.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/isPlatformSupported/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/is-platform-supported.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/maxFaces/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/max-faces.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/postProcessingEffects/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/post-processing-effects.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsAudioBrowser/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-audio-browser.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsBgSeparation/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-bg-separation.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsFHD/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-f-h-d.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsFaceAR/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-face-a-r.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsPip/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-pip.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/supportsPixelateEffects/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/supports-pixelate-effects.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicense/timeBombInfo/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license/time-bomb-info.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/index.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/checkPostProcessingEffect/#kotlin.Long/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/check-post-processing-effect.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/doWhenInitialized/#kotlin.coroutines.SuspendFunction1[com.banuba.sdk.token.storage.license.EditorLicense,kotlin.Unit]/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/do-when-initialized.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/initialize/#kotlin.String/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/initialize.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/isInitialized/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/is-initialized.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/isTokenExpired/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/is-token-expired.md
+$dokka.location:com.banuba.sdk.token.storage.license/EditorLicenseManager/license/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.license/-editor-license-manager/license.md
+$dokka.location:com.banuba.sdk.token.storage.provider////PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/FirebaseTokenProvider.Companion///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-firebase-token-provider/-companion/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/FirebaseTokenProvider///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-firebase-token-provider/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/FirebaseTokenProvider/FirebaseTokenProvider/#kotlin.String#com.banuba.sdk.token.storage.data.TokenPreference#kotlin.String?#com.google.firebase.database.FirebaseDatabase?/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-firebase-token-provider/-firebase-token-provider.md
+$dokka.location:com.banuba.sdk.token.storage.provider/FirebaseTokenProvider/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-firebase-token-provider/get-token.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenApi///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-api/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenApi/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-api/get-token.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenMapper///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-mapper/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenMapper/map/#kotlin.Any/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-mapper/map.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenProvider.Companion///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-provider/-companion/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenProvider///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-provider/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenProvider/RemoteTokenProvider/#kotlin.String#java.lang.Class[TypeParam(bounds=[com.banuba.sdk.token.storage.provider.RemoteTokenApi])]#com.banuba.sdk.token.storage.provider.RemoteTokenMapper#okhttp3.Interceptor?#okhttp3.Dispatcher?/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-provider/-remote-token-provider.md
+$dokka.location:com.banuba.sdk.token.storage.provider/RemoteTokenProvider/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-remote-token-provider/get-token.md
+$dokka.location:com.banuba.sdk.token.storage.provider/TokenProvider///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-token-provider/index.md
+$dokka.location:com.banuba.sdk.token.storage.provider/TokenProvider/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.provider/-token-provider/get-token.md
+com.banuba.sdk.token.storage.data
+com.banuba.sdk.token.storage.di
+com.banuba.sdk.token.storage.license
+com.banuba.sdk.token.storage.provider
+
