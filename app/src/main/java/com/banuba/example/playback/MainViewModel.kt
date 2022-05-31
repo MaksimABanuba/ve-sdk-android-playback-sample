@@ -17,26 +17,23 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.banuba.sdk.core.data.MediaDataGalleryValidator
 import com.banuba.sdk.core.data.MediaValidationResultType
+import com.banuba.sdk.core.effects.DrawType
 import com.banuba.sdk.core.effects.IEqualizerEffect
+import com.banuba.sdk.core.effects.IVisualEffectDrawable
+import com.banuba.sdk.core.effects.RectParams
 import com.banuba.sdk.core.ext.copyFromAssetsToExternal
 import com.banuba.sdk.core.gl.GlViewport
 import com.banuba.sdk.core.media.DurationExtractor
-import com.banuba.sdk.effects.ve.time.speed.BaseSpeedEffectDrawable
-import com.banuba.sdk.effects.ve.time.speed.RapidEffect
-import com.banuba.sdk.effects.ve.visual.vhs.VHSDrawable
+import com.banuba.sdk.effects.ve.VideoEffectsHelper
 import com.banuba.sdk.playback.PlaybackError
-import com.banuba.sdk.playback.PlaybackUtils
 import com.banuba.sdk.playback.PlayerScaleType
 import com.banuba.sdk.playback.VideoPlayer
-import com.banuba.sdk.ve.effects.RectParams
 import com.banuba.sdk.ve.effects.SpeedTimedEffect
 import com.banuba.sdk.ve.effects.TypedTimedEffect
 import com.banuba.sdk.ve.effects.VisualTimedEffect
-import com.banuba.sdk.ve.effects.`object`.GifObjectDrawable
-import com.banuba.sdk.ve.effects.`object`.TextObjectDrawable
-import com.banuba.sdk.ve.effects.lut.LUTDrawable
 import com.banuba.sdk.ve.effects.music.MusicEffect
 import com.banuba.sdk.ve.ext.DurationHelper
+import com.banuba.sdk.ve.ext.VideoEditorUtils
 import com.banuba.sdk.ve.ext.setCoordinates
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -107,7 +104,7 @@ class MainViewModel(
         viewModelScope.launch(Dispatchers.IO) {
             val playlist = videos
                 .filter { videoValidator.getValidationResult(it) == MediaValidationResultType.VALID_FILE }
-                .mapNotNull { PlaybackUtils.createVideoRecordRange(it, context) }
+                .mapNotNull { VideoEditorUtils.createVideoRecordRange(it, context) }
             _totalDuration.postValue(DurationHelper().run {
                 setVideoRanges(playlist)
                 this.totalDuration
@@ -197,7 +194,7 @@ class MainViewModel(
     }
 
     fun removeFxEffect() {
-        appliedEffects.removeAll { it.drawable is VHSDrawable }
+        appliedEffects.removeAll { it.drawable.type == DrawType.VISUAL }
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -208,7 +205,7 @@ class MainViewModel(
     }
 
     fun removeTextEffect() {
-        appliedEffects.removeAll { it.drawable is TextObjectDrawable }
+        appliedEffects.removeAll { it.drawable.type == DrawType.TEXT }
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -219,7 +216,7 @@ class MainViewModel(
     }
 
     fun removeGifEffect() {
-        appliedEffects.removeAll { it.drawable is GifObjectDrawable }
+        appliedEffects.removeAll { it.drawable.type == DrawType.GIF }
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -230,7 +227,7 @@ class MainViewModel(
     }
 
     fun removeSpeedEffect() {
-        appliedEffects.removeAll { it.drawable is BaseSpeedEffectDrawable }
+        appliedEffects.removeAll { it.drawable.type == DrawType.TIME }
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -241,7 +238,7 @@ class MainViewModel(
     }
 
     fun removeLutEffect() {
-        appliedEffects.removeAll { it.drawable is LUTDrawable }
+        appliedEffects.removeAll { it.drawable.type == DrawType.COLOR }
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -264,7 +261,11 @@ class MainViewModel(
      * By default each fx effect applied on the whole video duration.
      */
     private fun generateVHSEffect(): VisualTimedEffect {
-        return VisualTimedEffect(effectDrawable = VHSDrawable())
+        val vhsDrawable = VideoEffectsHelper.takeAvailableFxEffects(context).find {
+            context.getString(it.nameRes) == "VHS"
+        }?.provide() ?: throw Exception("VHS video effect is not available!")
+        if (vhsDrawable !is IVisualEffectDrawable) throw TypeCastException("Drawable is not IVisualEffectDrawable type!")
+        return VisualTimedEffect(effectDrawable = vhsDrawable)
     }
 
     /**
@@ -287,7 +288,7 @@ class MainViewModel(
         }
 
         return VisualTimedEffect(
-            effectDrawable = TextObjectDrawable(UUID.randomUUID(), bitmap, rectParams)
+            effectDrawable = VideoEffectsHelper.createTextEffect(UUID.randomUUID(), bitmap, rectParams)
         )
     }
 
@@ -306,7 +307,7 @@ class MainViewModel(
         }
 
         return VisualTimedEffect(
-            effectDrawable = GifObjectDrawable(UUID.randomUUID(), stickerUri, rectParams)
+            effectDrawable = VideoEffectsHelper.createGifEffect(UUID.randomUUID(), stickerUri, rectParams)
         )
     }
 
@@ -315,13 +316,13 @@ class MainViewModel(
      * By default each speed effect applied on the whole video duration.
      */
     private fun createRapidEffect(): SpeedTimedEffect {
-        val speedEffect = RapidEffect()
+        val speedEffect = VideoEffectsHelper.createSpeedEffect(2F)
         return SpeedTimedEffect(effectDrawable = speedEffect)
     }
 
     private fun createColorFilterEffect(): VisualTimedEffect {
         val colorEffectFile = context.copyFromAssetsToExternal("color_filter_example.png")
-        return VisualTimedEffect(LUTDrawable.create(colorEffectFile.path, Size(1024, 768)))
+        return VisualTimedEffect(VideoEffectsHelper.createLutEffect(colorEffectFile.path, Size(1024, 768)))
     }
 
     data class PlaybackMusicEffect(

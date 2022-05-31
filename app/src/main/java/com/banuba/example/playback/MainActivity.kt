@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     private val selectMusicTrack = registerForActivityResult(ActivityResultContracts.GetContent()) {
+        if (it == null) {
+            musicEffectCheckBox.isChecked = false
+            return@registerForActivityResult
+        }
         viewModel.addMusicToPlayback(it)
     }
 
