@@ -1,11 +1,9 @@
-//[ve-playback-sdk](../../../../index.md)/[com.banuba.sdk.playback](../../index.md)/[PlayerScaleType](../index.md)/[CENTER_INSIDE](index.md)
+//[ve-playback-sdk](../../../../index.md)/[com.banuba.sdk.playback](../../index.md)/[PlayerState](../index.md)/[LOADING](index.md)
 
-# CENTER_INSIDE
+# LOADING
 
 [androidJvm]\
-[CENTER_INSIDE](index.md)()
-
-Draws the video in the center of the viewport fully visible
+[LOADING](index.md)()
 
 ## Properties
 

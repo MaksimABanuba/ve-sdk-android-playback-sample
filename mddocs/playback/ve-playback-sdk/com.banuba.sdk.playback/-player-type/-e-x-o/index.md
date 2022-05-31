@@ -1,11 +1,9 @@
-//[ve-playback-sdk](../../../../index.md)/[com.banuba.sdk.playback](../../index.md)/[PlayerSeekStrategy](../index.md)/[FAST](index.md)
+//[ve-playback-sdk](../../../../index.md)/[com.banuba.sdk.playback](../../index.md)/[PlayerType](../index.md)/[EXO](index.md)
 
-# FAST
+# EXO
 
 [androidJvm]\
-[FAST](index.md)()
-
-For the fast seeking, means that the video player takes the closest sync point as the position
+[EXO](index.md)()
 
 ## Properties
 

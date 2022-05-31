@@ -5,7 +5,15 @@
 [androidJvm]\
 class [FirebaseTokenProvider](index.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?) : [TokenProvider](../-token-provider/index.md)
 
-One of the [TokenProvider](../-token-provider/index.md) implementations that loads Video Editor token from Firebase Realtime Database
+One of the [TokenProvider](../-token-provider/index.md) implementations that loads Video Editor token from Firebase Realtime Database.
+
+## Parameters
+
+androidJvm
+
+| | |
+|---|---|
+| localToken | will be used if firebaseDatabase is null |
 
 ## Constructors
 
