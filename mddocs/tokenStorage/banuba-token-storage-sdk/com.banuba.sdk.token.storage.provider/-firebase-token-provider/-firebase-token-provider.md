@@ -4,3 +4,11 @@
 
 [androidJvm]\
 fun [FirebaseTokenProvider](-firebase-token-provider.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?)
+
+## Parameters
+
+androidJvm
+
+| | |
+|---|---|
+| localToken | will be used if firebaseDatabase is null |

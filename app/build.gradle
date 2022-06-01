@@ -36,10 +36,10 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
 
-    def banubaSdkVersion = '1.22.0'
+    def banubaSdkVersion = '1.23.0'
     implementation "com.banuba.sdk:banuba-token-storage-sdk:${banubaSdkVersion}"
     implementation "com.banuba.sdk:core-sdk:${banubaSdkVersion}"
     implementation "com.banuba.sdk:ve-sdk:${banubaSdkVersion}"
