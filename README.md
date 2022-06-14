@@ -52,6 +52,7 @@ Please, specify a list of dependencies as in [app/build.gradle](app/build.gradle
 
 ``` groovy
 def banubaSdkVersion = 'X.X.X'
+implementation "com.banuba.sdk:ffmpeg:Y.Y"
 implementation "com.banuba.sdk:banuba-token-storage-sdk:${banubaSdkVersion}"
 implementation "com.banuba.sdk:core-sdk:${banubaSdkVersion}"
 implementation "com.banuba.sdk:ve-sdk:${banubaSdkVersion}"
