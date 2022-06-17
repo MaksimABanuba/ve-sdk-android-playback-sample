@@ -44,7 +44,7 @@ This is what you need to run the Playback API
 ## Token
 We offer а free 14-days trial for you could thoroughly test and assess Playback API functionality in your app. To get access to your trial, please, get in touch with us by [filling a form](https://www.banuba.com/video-editor-sdk) on our website. Our sales managers will send you the trial token.
 
-Banuba token should be put [here](app/src/main/res/values/strings.xml).
+Banuba token should be put [here](app/src/main/res/values/strings.xml#L6).
 
 ## Getting Started
 ### Add dependencies
@@ -83,9 +83,10 @@ Before playing any videos in Video Player you should prepare the player.
 To do it just invoke 
 
 ```kotlin
-fun prepare(): Boolean
+fun prepare(size: Size): Boolean
 ```
-function. 
+function. It requires preferred size of the video. This size is used to define the aspect ratio.
+Keep in mind that the real displaying size is limited by SurfaceView size.
 
 If you want to setup VideoPlayer in any moment in the future, but not right after prepare() invocation,
 there is helper function:
@@ -136,14 +137,10 @@ VideoPlayer has a bulk of standard functions which organize playback:
 ```kotlin
 fun play(isRepeat: Boolean)
 fun pause()
-fun seekTo(positionMs: Int)
 fun isPlaying(): Boolean
-fun setSeekStrategy(strategy: PlayerSeekStrategy)
 fun setVolume(volume: Float)
+fun seekTo(positionMs: Int)
 ```
-
-Function setSeekStrategy may help you to change the precision of seeking in case you need to obtain better video rewind speed.
-FAST and ACCURATE values are possible here. The ACCURATE is used by default.
 
 ### Playback with effects
 
@@ -181,11 +178,12 @@ fun enableObjectEffects(enable: Boolean)
 
 ### How to prepare effects for playback
 
-By default Visual and Time effects are applied on the whole video playback duration.
-So to create them is very easy, for example:
+By default Visual and Time effects are applied on the whole video playback duration. Use ```VideoEffectsHelper``` to create effects.
+For example, a color filter effect (lut) can be created next way:
 
 ```kotlin
-VisualTimedEffect(effectDrawable = VHSDrawable())
+val colorEffectFile = context.copyFromAssetsToExternal("color_filter_example.png")
+VisualTimedEffect(VideoEffectsHelper.createLutEffect(colorEffectFile.path, Size(1024, 768)))
 ```
 
 However effects can start and finish from any position on the playback.
@@ -198,7 +196,7 @@ In this case you should create it as follows (note, that here end position is no
 
 ```kotlin
 VisualTimedEffect(
-  effectDrawable = VHSDrawable(),
+  effectDrawable = effectDrawable,
   startTimeBundle = TimeBundle(1, 0),
   startTotal = 1000)
 ```
@@ -207,7 +205,7 @@ If you want to play effect only during the second video playback, you need to se
 
 ```kotlin
 VisualTimedEffect(
-  effectDrawable = VHSDrawable(),
+  effectDrawable = effectDrawable,
   startTimeBundle = TimeBundle(1, 0),
   startTotal = 1000,
   endTimeBundle = TimeBundle(1, 1000),
@@ -216,14 +214,14 @@ VisualTimedEffect(
 
 **Note** ```startTimeBundle``` and ```endTimeBundle``` define position within certain video in playback, ```startTotal``` and ```endTotal``` define position on the whole video playback.
 
-Preparing of music effects are described [here](https://github.com/Banuba/ve-sdk-android-playback-sample/blob/initial-sample/app/src/main/java/com/banuba/example/playback/MainViewModel.kt#L127).
+Preparing of music effects are described [here](app/src/main/java/com/banuba/example/playback/MainViewModel.kt#L127).
 
 ### VideoPlayer.Callback
 
 To receive updates from VideoPlayer you have to setup callback:
 
 ```kotlin
-fun setCallback(callback: Callback)
+fun setCallback(callback: Callback?)
 ```
 
 The VideoPlayer.Callback allows to track the recent playback position:
