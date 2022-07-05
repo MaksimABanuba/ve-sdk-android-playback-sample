@@ -101,6 +101,14 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             }
         }
 
+        customEffectCheckBox.setOnCheckedChangeListener { _, checked ->
+            if (checked) {
+                viewModel.applyCustomEffect()
+            } else {
+                viewModel.remoteCustomEffect()
+            }
+        }
+
         videoPlayerSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
 
             override fun onProgressChanged(p0: SeekBar?, progress: Int, fromUser: Boolean) {

@@ -138,6 +138,15 @@
             android:padding="8dp"
             android:text="Music Effect" />
 
+        <com.google.android.material.chip.Chip
+            android:id="@+id/customEffectCheckBox"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:padding="8dp"
+            android:text="Custom Effect" />
+
     </com.google.android.material.chip.ChipGroup>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
