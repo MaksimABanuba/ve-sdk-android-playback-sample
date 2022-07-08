@@ -61,6 +61,8 @@ class MainViewModel(
     val screenshotBitmap: LiveData<Bitmap>
         get() = _screenshotBitmap
 
+    private var viewportSize = Size(720, 1280)
+
     /**
      * This list is used to store applied visual and speed effects
      */
@@ -84,6 +86,7 @@ class MainViewModel(
                 "BanubaVideoPlayer",
                 "Video view port: (${viewport.x}, ${viewport.y}), Size(${viewport.width}x${viewport.height})"
             )
+            viewportSize = Size(viewport.width, viewport.height)
         }
 
     }
@@ -188,8 +191,8 @@ class MainViewModel(
     }
 
     fun applyFxEffect() {
-        val vhsEffect = generateVHSEffect()
-        appliedEffects.add(vhsEffect)
+        val fxEffect = generateFxEffect()
+        appliedEffects.add(fxEffect)
         videoPlayer.setEffects(appliedEffects)
     }
 
@@ -246,6 +249,17 @@ class MainViewModel(
         videoPlayer.setMusicEffects(emptyList())
     }
 
+    fun applyCustomEffect() {
+        val customEffect = generateCustomEffect()
+        appliedEffects.add(customEffect)
+        videoPlayer.setEffects(appliedEffects)
+    }
+
+    fun remoteCustomEffect() {
+        appliedEffects.removeAll { it.drawable.type == DrawType.CUSTOM }
+        videoPlayer.setEffects(appliedEffects)
+    }
+
     fun releasePlayer(surfaceHolder: SurfaceHolder) {
         videoPlayer.clearSurfaceHolder(surfaceHolder)
         videoPlayer.release()
@@ -260,12 +274,12 @@ class MainViewModel(
      * To get full list of fx effects, check classes of BaseVisualEffectDrawable type.
      * By default each fx effect applied on the whole video duration.
      */
-    private fun generateVHSEffect(): VisualTimedEffect {
-        val vhsDrawable = VideoEffectsHelper.takeAvailableFxEffects(context).find {
-            context.getString(it.nameRes) == "VHS"
-        }?.provide() ?: throw Exception("VHS video effect is not available!")
-        if (vhsDrawable !is IVisualEffectDrawable) throw TypeCastException("Drawable is not IVisualEffectDrawable type!")
-        return VisualTimedEffect(effectDrawable = vhsDrawable)
+    private fun generateFxEffect(): VisualTimedEffect {
+        val fxDrawable = VideoEffectsHelper.createFxEffect(
+            context = context,
+            resourceIdentifier = "vhs"
+        ) ?: throw Exception("Video effect is not available!")
+        return VisualTimedEffect(effectDrawable = fxDrawable)
     }
 
     /**
@@ -323,6 +337,19 @@ class MainViewModel(
     private fun createColorFilterEffect(): VisualTimedEffect {
         val colorEffectFile = context.copyFromAssetsToExternal("color_filter_example.png")
         return VisualTimedEffect(VideoEffectsHelper.createLutEffect(colorEffectFile.path, Size(1024, 768)))
+    }
+
+    /**
+     * Creates custom effect.
+     */
+    private fun generateCustomEffect(): VisualTimedEffect {
+        val (width, height) = viewportSize.width to viewportSize.height
+        val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ALPHA_8)
+        val canvas = Canvas(bitmap)
+        val paint = Paint()
+        paint.color = Color.WHITE
+        canvas.drawCircle(width / 2.0f, height / 2.0f, height / 5.0f, paint)
+        return VisualTimedEffect(effectDrawable = CustomEffectDrawable(bitmap))
     }
 
     data class PlaybackMusicEffect(

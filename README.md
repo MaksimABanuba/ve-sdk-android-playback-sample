@@ -186,6 +186,20 @@ val colorEffectFile = context.copyFromAssetsToExternal("color_filter_example.png
 VisualTimedEffect(VideoEffectsHelper.createLutEffect(colorEffectFile.path, Size(1024, 768)))
 ```
 
+Video (Fx) effect can be created next way:
+
+```kotlin
+val fxDrawable = VideoEffectsHelper.createFxEffect(
+    context = context,
+    resourceIdentifier = "vhs"
+) ?: throw Exception("Video effect is not available!")
+val fxEffect = VisualTimedEffect(effectDrawable = fxDrawable)
+```
+
+Here ```resourceIdentifier``` is a string identifier of video effect. All avaiable string identifiers can be find [here](https://github.com/Banuba/ve-sdk-android-integration-sample/blob/main/mddocs/editor_styles.md#effects-customization).
+
+Also client can create some custom effect. To do this you need to implement ```IVisualEffectDrawable``` interface with ```DrawType.CUSTOM``` type and to implement ```EffectRenderer``` interface. See the sample of [CustomEffectDrawable](./app/src/main/java/com/banuba/example/playback/CustomEffectDrawable.kt ) and [CustomEffectRenderer](./app/src/main/java/com/banuba/example/playback/CustomEffectRenderer.kt) for more details.
+
 However effects can start and finish from any position on the playback.
 To setup time borders for effects you should use ```TimeBundle(window: Int, time: Int)``` data class for start and finish points.
 Here ```window``` is an index of video inside playback which will be the first video where this effect is applied.
