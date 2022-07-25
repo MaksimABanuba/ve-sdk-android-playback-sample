@@ -14,6 +14,7 @@ class PlaybackApp : Application() {
 
         startKoin {
             androidContext(this@PlaybackApp)
+            allowOverride(true)
             modules(
                 TokenStorageKoinModule().module,
                 MainKoinModule().module,

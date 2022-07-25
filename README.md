@@ -57,6 +57,7 @@ implementation "com.banuba.sdk:banuba-token-storage-sdk:${banubaSdkVersion}"
 implementation "com.banuba.sdk:core-sdk:${banubaSdkVersion}"
 implementation "com.banuba.sdk:ve-sdk:${banubaSdkVersion}"
 implementation "com.banuba.sdk:ve-playback-sdk:${banubaSdkVersion}"
+implementation "com.banuba.sdk:ve-effects-sdk:${banubaSdkVersion}"
 ```
 
 ### Configure DI
