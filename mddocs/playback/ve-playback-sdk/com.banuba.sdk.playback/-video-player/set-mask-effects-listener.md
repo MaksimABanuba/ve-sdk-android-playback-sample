@@ -3,7 +3,7 @@
 # setMaskEffectsListener
 
 [androidJvm]\
-abstract fun [setMaskEffectsListener](set-mask-effects-listener.md)(listener: [VideoPlayer.MaskEffectsListener](-mask-effects-listener/index.md))
+abstract fun [setMaskEffectsListener](set-mask-effects-listener.md)(listener: [VideoPlayer.MaskEffectsListener](-mask-effects-listener/index.md)?)
 
 Adds a mask effects listener.
 
