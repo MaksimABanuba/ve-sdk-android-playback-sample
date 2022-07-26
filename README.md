@@ -68,6 +68,7 @@ To provide all required for playback classes you should initialize the Koin modu
 
         startKoin {
             androidContext(this@PlaybackApp)
+            allowOverride(true)
             modules(
                 TokenStorageKoinModule().module,
                 MainKoinModule().module,
@@ -119,7 +120,7 @@ fun setScaleType(scaleType: PlayerScaleType)
 In case of any error ```prepare()``` function returns "false" as a result. More detailed information can be found in terminal by the "BanubaVideoPlayer" tag.
 
 Playback API consumes VideoRecordRanges objects as video playlist.
-There is a convenient function inside PlaybackUtils that allows you to create VideoRecordRange from video uri:
+There is a convenient function inside VideoEditorUtils that allows you to create VideoRecordRange from video uri:
 
 ```kotlin
 fun createVideoRecordRange(
@@ -229,7 +230,7 @@ VisualTimedEffect(
 
 **Note** ```startTimeBundle``` and ```endTimeBundle``` define position within certain video in playback, ```startTotal``` and ```endTotal``` define position on the whole video playback.
 
-Preparing of music effects are described [here](app/src/main/java/com/banuba/example/playback/MainViewModel.kt#L127).
+Preparing of music effects are described [here](app/src/main/java/com/banuba/example/playback/MainViewModel.kt#L130).
 
 ### VideoPlayer.Callback
 
