@@ -65,11 +65,11 @@ $dokka.location:com.banuba.sdk.playback/VideoPlayer/isPrepared/#/PointingToDecla
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/pause/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/pause.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/play/#kotlin.Boolean/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/play.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/prepare/#android.util.Size/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/prepare.md
-$dokka.location:com.banuba.sdk.playback/VideoPlayer/release/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/release.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayer/release/#kotlin.Boolean/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/release.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/seekTo/#kotlin.Int/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/seek-to.md
-$dokka.location:com.banuba.sdk.playback/VideoPlayer/setCallback/#com.banuba.sdk.playback.VideoPlayer.Callback/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-callback.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayer/setCallback/#com.banuba.sdk.playback.VideoPlayer.Callback?/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-callback.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setEffects/#kotlin.collections.List[com.banuba.sdk.ve.effects.TypedTimedEffect[*]]/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-effects.md
-$dokka.location:com.banuba.sdk.playback/VideoPlayer/setMaskEffectsListener/#com.banuba.sdk.playback.VideoPlayer.MaskEffectsListener/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-mask-effects-listener.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayer/setMaskEffectsListener/#com.banuba.sdk.playback.VideoPlayer.MaskEffectsListener?/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-mask-effects-listener.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setMusicEffects/#kotlin.collections.List[com.banuba.sdk.ve.effects.music.MusicEffect]/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-music-effects.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setScaleType/#com.banuba.sdk.playback.PlayerScaleType/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-scale-type.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setSurfaceHolder/#android.view.SurfaceHolder/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-surface-holder.md
@@ -77,6 +77,13 @@ $dokka.location:com.banuba.sdk.playback/VideoPlayer/setVideoRanges/#kotlin.colle
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setVideoSize/#android.util.Size/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-video-size.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setVolume/#kotlin.Float/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-volume.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/takeScreenshot/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/take-screenshot.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerFactory///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-factory/index.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerFactory/provideVideoPlayer/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-factory/provide-video-player.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerProvider///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-provider/index.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerProvider/VideoPlayerProvider/#com.banuba.sdk.playback.VideoPlayerFactory/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-provider/-video-player-provider.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerProvider/clear/#kotlin.Boolean/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-provider/clear.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerProvider/getInstance/#android.util.Size/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-provider/get-instance.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayerProvider/releaseInstance/#com.banuba.sdk.playback.VideoPlayer/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player-provider/release-instance.md
 com.banuba.sdk.playback
 com.banuba.sdk.playback.di
 com.banuba.sdk.playback.internal.avplayer

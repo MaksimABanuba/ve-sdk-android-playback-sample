@@ -3,7 +3,7 @@
 # FirebaseTokenProvider
 
 [androidJvm]\
-class [FirebaseTokenProvider](index.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?) : [TokenProvider](../-token-provider/index.md)
+class [FirebaseTokenProvider](index.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?, connectivityManager: [ConnectivityManager](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html)) : [TokenProvider](../-token-provider/index.md)
 
 One of the [TokenProvider](../-token-provider/index.md) implementations that loads Video Editor token from Firebase Realtime Database.
 
@@ -19,7 +19,7 @@ androidJvm
 
 | | |
 |---|---|
-| [FirebaseTokenProvider](-firebase-token-provider.md) | [androidJvm]<br>fun [FirebaseTokenProvider](-firebase-token-provider.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?) |
+| [FirebaseTokenProvider](-firebase-token-provider.md) | [androidJvm]<br>fun [FirebaseTokenProvider](-firebase-token-provider.md)(localToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), tokenPreference: [TokenPreference](../../com.banuba.sdk.token.storage.data/-token-preference/index.md), targetSnapshot: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, firebaseDatabase: FirebaseDatabase?, connectivityManager: [ConnectivityManager](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html)) |
 
 ## Types
 
