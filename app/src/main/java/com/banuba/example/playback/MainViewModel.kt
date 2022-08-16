@@ -19,7 +19,6 @@ import com.banuba.sdk.core.data.MediaDataGalleryValidator
 import com.banuba.sdk.core.data.MediaValidationResultType
 import com.banuba.sdk.core.effects.DrawType
 import com.banuba.sdk.core.effects.IEqualizerEffect
-import com.banuba.sdk.core.effects.IVisualEffectDrawable
 import com.banuba.sdk.core.effects.RectParams
 import com.banuba.sdk.core.ext.copyFromAssetsToExternal
 import com.banuba.sdk.core.gl.GlViewport
