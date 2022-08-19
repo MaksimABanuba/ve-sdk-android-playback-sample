@@ -73,7 +73,7 @@ $dokka.location:com.banuba.sdk.playback/VideoPlayer/setMaskEffectsListener/#com.
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setMusicEffects/#kotlin.collections.List[com.banuba.sdk.ve.effects.music.MusicEffect]/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-music-effects.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setScaleType/#com.banuba.sdk.playback.PlayerScaleType/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-scale-type.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setSurfaceHolder/#android.view.SurfaceHolder/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-surface-holder.md
-$dokka.location:com.banuba.sdk.playback/VideoPlayer/setVideoRanges/#kotlin.collections.List[com.banuba.sdk.ve.domain.VideoRecordRange]/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-video-ranges.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayer/setVideoRanges/#kotlin.collections.List[com.banuba.sdk.ve.domain.VideoRecordRange]#kotlin.Int/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-video-ranges.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setVideoSize/#android.util.Size/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-video-size.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/setVolume/#kotlin.Float/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/set-volume.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer/takeScreenshot/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/take-screenshot.md
