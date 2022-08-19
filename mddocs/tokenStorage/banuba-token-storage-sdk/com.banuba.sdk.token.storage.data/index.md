@@ -8,3 +8,4 @@
 |---|---|
 | [CachedToken](-cached-token/index.md) | [androidJvm]<br>data class [CachedToken](-cached-token/index.md)(token: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), date: [Date](https://developer.android.com/reference/kotlin/java/util/Date.html)) |
 | [TokenPreference](-token-preference/index.md) | [androidJvm]<br>class [TokenPreference](-token-preference/index.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html)) |
+| [TokenType](-token-type/index.md) | [androidJvm]<br>enum [TokenType](-token-type/index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[TokenType](-token-type/index.md)&gt; |

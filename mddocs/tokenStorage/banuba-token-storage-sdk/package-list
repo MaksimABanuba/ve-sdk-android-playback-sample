@@ -10,6 +10,10 @@ $dokka.location:com.banuba.sdk.token.storage.data/TokenPreference///PointingToDe
 $dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/TokenPreference/#android.content.Context/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/-token-preference.md
 $dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/getToken/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/get-token.md
 $dokka.location:com.banuba.sdk.token.storage.data/TokenPreference/updateToken/#kotlin.String?#kotlin.Long/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-preference/update-token.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenType.FIREBASE///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-type/-f-i-r-e-b-a-s-e/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenType.LOCAL///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-type/-l-o-c-a-l/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenType.REMOTE///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-type/-r-e-m-o-t-e/index.md
+$dokka.location:com.banuba.sdk.token.storage.data/TokenType///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.data/-token-type/index.md
 $dokka.location:com.banuba.sdk.token.storage.di////PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/index.md
 $dokka.location:com.banuba.sdk.token.storage.di/TokenStorageKoinModule///PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/-token-storage-koin-module/index.md
 $dokka.location:com.banuba.sdk.token.storage.di/TokenStorageKoinModule/TokenStorageKoinModule/#/PointingToDeclaration/banuba-token-storage-sdk/com.banuba.sdk.token.storage.di/-token-storage-koin-module/-token-storage-koin-module.md
