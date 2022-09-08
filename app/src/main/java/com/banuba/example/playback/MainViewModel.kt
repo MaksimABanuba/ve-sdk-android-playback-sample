@@ -18,7 +18,7 @@ import androidx.lifecycle.viewModelScope
 import com.banuba.sdk.core.data.MediaDataGalleryValidator
 import com.banuba.sdk.core.data.MediaValidationResultType
 import com.banuba.sdk.core.effects.DrawType
-import com.banuba.sdk.core.effects.IEqualizerEffect
+import com.banuba.sdk.core.effects.EqualizerEffect
 import com.banuba.sdk.core.effects.RectParams
 import com.banuba.sdk.core.ext.copyFromAssetsToExternal
 import com.banuba.sdk.core.gl.GlViewport
@@ -360,7 +360,7 @@ class MainViewModel(
         override val normalSpeedEffectDurationMs: Long,
         override val volume: Float,
         override val playUri: Uri,
-        override val equalizerEffect: IEqualizerEffect?
+        override val equalizerEffect: EqualizerEffect?
     ) : MusicEffect
 
 }
