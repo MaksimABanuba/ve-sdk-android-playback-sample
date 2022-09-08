@@ -19,4 +19,4 @@ object [EditorLicenseManager](index.md)
 | Name | Summary |
 |---|---|
 | [isInitialized](is-initialized.md) | [androidJvm]<br>val [isInitialized](is-initialized.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>True if the license is initialized |
-| [license](license.md) | [androidJvm]<br>lateinit var [license](license.md): [EditorLicense](../-editor-license/index.md)<br>License information |
+| [license](license.md) | [androidJvm]<br>var [license](license.md): [EditorLicense](../-editor-license/index.md)<br>License information |

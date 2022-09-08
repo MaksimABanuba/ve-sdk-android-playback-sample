@@ -3,6 +3,6 @@
 # license
 
 [androidJvm]\
-lateinit var [license](license.md): [EditorLicense](../-editor-license/index.md)
+var [license](license.md): [EditorLicense](../-editor-license/index.md)
 
 License information

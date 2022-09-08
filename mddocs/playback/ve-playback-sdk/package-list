@@ -4,9 +4,31 @@ $dokka.location:com.banuba.sdk.playback.di////PointingToDeclaration/ve-playback
 $dokka.location:com.banuba.sdk.playback.di/VePlaybackSdkKoinModule///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.di/-ve-playback-sdk-koin-module/index.md
 $dokka.location:com.banuba.sdk.playback.di/VePlaybackSdkKoinModule/VePlaybackSdkKoinModule/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.di/-ve-playback-sdk-koin-module/-ve-playback-sdk-koin-module.md
 $dokka.location:com.banuba.sdk.playback.di/VePlaybackSdkKoinModule/module/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.di/-ve-playback-sdk-koin-module/module.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio////PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/AVPlayerAudioOutputType.AUDIO_TRACK///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-a-v-player-audio-output-type/-a-u-d-i-o_-t-r-a-c-k/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/AVPlayerAudioOutputType.OBOE///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-a-v-player-audio-output-type/-o-b-o-e/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/AVPlayerAudioOutputType///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-a-v-player-audio-output-type/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput.Companion///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/-companion/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/index.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/OboeAudioOutput/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/-oboe-audio-output.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/canWriteMore/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/can-write-more.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/flush/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/flush.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/isPlaying/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/is-playing.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/isReadyForPlayback/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/is-ready-for-playback.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/playbackPositionFrames/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/playback-position-frames.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/release/#/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/release.md
+$dokka.location:com.banuba.sdk.playback.internal.avplayer.audio/OboeAudioOutput/write/#java.nio.ByteBuffer/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer.audio/-oboe-audio-output/write.md
 $dokka.location:com.banuba.sdk.playback.internal.avplayer////PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer/index.md
 $dokka.location:com.banuba.sdk.playback.internal.avplayer/PlayerVideoDecoderFactory///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer/-player-video-decoder-factory/index.md
 $dokka.location:com.banuba.sdk.playback.internal.avplayer/PlayerVideoDecoderFactory/getVideoDecoder/#android.content.Context#android.net.Uri#com.banuba.sdk.ve.media.DecoderOutputConfig#com.banuba.sdk.ve.media.VideoDecoder.FormatListener/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.avplayer/-player-video-decoder-factory/get-video-decoder.md
+$dokka.location:com.banuba.sdk.playback.internal.utils////PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.utils/index.md
+$dokka.location:com.banuba.sdk.playback.internal.utils/PrioritizedThreadFactory///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.utils/-prioritized-thread-factory/index.md
+$dokka.location:com.banuba.sdk.playback.internal.utils/PrioritizedThreadFactory/PrioritizedThreadFactory/#kotlin.Int/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.utils/-prioritized-thread-factory/-prioritized-thread-factory.md
+$dokka.location:com.banuba.sdk.playback.internal.utils/PrioritizedThreadFactory/newThread/#java.lang.Runnable?/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.internal.utils/-prioritized-thread-factory/new-thread.md
+$dokka.location:com.banuba.sdk.playback.pip////PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.pip/index.md
+$dokka.location:com.banuba.sdk.playback.pip/AVPlayerPiPProvider///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.pip/-a-v-player-pi-p-provider/index.md
+$dokka.location:com.banuba.sdk.playback.pip/AVPlayerPiPProvider/AVPlayerPiPProvider/#com.banuba.sdk.playback.internal.avplayer.audio.AVPlayerAudioOutputType/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.pip/-a-v-player-pi-p-provider/-a-v-player-pi-p-provider.md
+$dokka.location:com.banuba.sdk.playback.pip/AVPlayerPiPProvider/providePictureInPictureVideoSource/#android.content.Context#com.banuba.sdk.core.gl.EglCore/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback.pip/-a-v-player-pi-p-provider/provide-picture-in-picture-video-source.md
 $dokka.location:com.banuba.sdk.playback////PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/index.md
 $dokka.location:com.banuba.sdk.playback/PlaybackError.Effects///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-playback-error/-effects/index.md
 $dokka.location:com.banuba.sdk.playback/PlaybackError.Effects/Effects/#java.util.UUID#kotlin.String?/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-playback-error/-effects/-effects.md
@@ -49,6 +71,7 @@ $dokka.location:com.banuba.sdk.playback/PlayerType.EXO///PointingToDeclaration/
 $dokka.location:com.banuba.sdk.playback/PlayerType///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-player-type/index.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback///PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/index.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback/onPlayStateChanged/#com.banuba.sdk.playback.PlayerState/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/on-play-state-changed.md
+$dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback/onRangeDurationsMsUpdated/#kotlin.collections.List[kotlin.ranges.LongRange]/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/on-range-durations-ms-updated.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback/onScreenshotTaken/#android.graphics.Bitmap/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/on-screenshot-taken.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback/onVideoPlaybackError/#com.banuba.sdk.playback.PlaybackError/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/on-video-playback-error.md
 $dokka.location:com.banuba.sdk.playback/VideoPlayer.Callback/onVideoPositionChanged/#kotlin.Int/PointingToDeclaration/ve-playback-sdk/com.banuba.sdk.playback/-video-player/-callback/on-video-position-changed.md
@@ -87,4 +110,7 @@ $dokka.location:com.banuba.sdk.playback/VideoPlayerProvider/releaseInstance/#com
 com.banuba.sdk.playback
 com.banuba.sdk.playback.di
 com.banuba.sdk.playback.internal.avplayer
+com.banuba.sdk.playback.internal.avplayer.audio
+com.banuba.sdk.playback.internal.utils
+com.banuba.sdk.playback.pip
 

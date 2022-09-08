@@ -3,4 +3,4 @@
 # releaseInstance
 
 [androidJvm]\
-fun [releaseInstance](release-instance.md)(videoPlayer: [VideoPlayer](../-video-player/index.md)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+fun [releaseInstance](release-instance.md)(videoPlayer: [VideoPlayer](../-video-player/index.md))
