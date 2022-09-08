@@ -13,7 +13,7 @@
 | org.apache.commons:commons-math3 | 3.6.1 |
 | org.jetbrains.kotlin:kotlin-stdlib-jdk7 | 1.6.20 |
 | org.jetbrains.kotlinx:kotlinx-coroutines-core | 1.6.0 |
-| pl.droidsonroids.gif:android-gif-drawable | 1.2.24 |
 | com.squareup.retrofit2:retrofit | 2.9.0 |
 | com.squareup.retrofit2:converter-moshi | 2.9.0 |
 | androidx.security:security-crypto | 1.0.0 |
+| com.google.oboe:oboe | 1.6.1 |
